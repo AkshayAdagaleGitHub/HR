@@ -1,0 +1,50 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+       		int n=0;
+		Scanner scanner = new Scanner(System.in);
+		ArrayList<String> inputs = new ArrayList<String>();
+	
+		n = scanner.nextInt();
+		//Due to user presses enter
+		scanner.nextLine();
+		for(int i=0;i<n;i++){
+			inputs.add(scanner.nextLine());
+		}
+		/*for(String d:inputs){
+			System.out.println(d);
+		}*/
+		
+		for(int i =0;i< inputs.size();i++){
+			
+			char[] firstString = inputs.get(i).toCharArray();
+			
+			for(int j =0; j< firstString.length;j++)
+			{
+				if(j%2==0){
+					System.out.print(firstString[j]);
+				}
+			}
+			System.out.print(" ");
+			
+			for(int x =0; x< firstString.length;x++)
+			{
+				if(x%2!=0){
+					System.out.print(firstString[x]);
+				}
+			}
+			System.out.println();
+			
+		}
+
+		
+	}
+
+}
