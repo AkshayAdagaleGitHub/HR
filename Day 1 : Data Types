@@ -1,0 +1,31 @@
+        /* Declare second integer, double, and String variables. */
+
+        int i1;
+        double d1;
+        String s1,s2;
+
+//System.out.println("Enter an Interger value");
+        i1 =scan.nextInt();
+        
+  //      System.out.println("Enter a double value");
+        d1 = scan.nextDouble();
+        
+    //    System.out.println("Enter a String value");
+ scan.nextLine();         
+s1 = scan.nextLine();
+
+// Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
+        
+      //  int add= ;
+        //double add1 = d+dd;
+        
+        /* Print the sum of both integer variables on a new line. */
+        System.out.println(i + i1);
+
+        /* Print the sum of the double variables on a new line. */
+		System.out.println(d + d1);
+        /* Concatenate and print the String variables on a new line; 
+        	the 's' variable above should be printed first. */
+		//s2=s.concat(s1);
+		System.out.println(s+s1);
+        //System.out.print(s1);
